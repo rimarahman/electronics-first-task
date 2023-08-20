@@ -10,7 +10,9 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 15px 50px;
-
+    .mainLogo {
+      cursor: pointer;
+    }
     .iconContainer {
       display: flex;
       justify-content: space-evenly;
