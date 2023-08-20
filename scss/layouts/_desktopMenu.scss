@@ -1,0 +1,84 @@
+.desktopMenu {
+  background: rgb(46 57 61 / 80%);
+  display: none;
+  opacity: 0;
+  backdrop-filter: blur(15px);
+  width: 34vw;
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  left: 31.5%;
+  z-index: 5;
+  .menuOptionContainer {
+    .menuHead {
+      display: flex;
+      justify-content: space-between;
+      background: rgb(27 43 44 / 80%);
+      backdrop-filter: blur(1px);
+      border-radius: 10px;
+      padding: 10px 20px;
+      p {
+        cursor: pointer;
+      }
+    }
+    .menuOptions {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      padding: 10px;
+      .option {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 6px;
+        border-radius: 20px;
+        &:hover {
+          backdrop-filter: blur(20px);
+          background: #30383f;
+          cursor: pointer;
+        }
+        .optionImage {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+        }
+        p {
+          font-weight: 600;
+        }
+        .fa-brands {
+          font-size: 26px;
+          color: #14487b;
+          background-color: white;
+          border-radius: 50px;
+        }
+      }
+    }
+    .menuOptionsLarge {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      justify-content: space-between;
+      .optionLarge {
+        padding: 6px;
+        border-radius: 20px;
+        &:hover {
+          backdrop-filter: blur(20px);
+          background: #30383f;
+          cursor: pointer;
+        }
+        img {
+          width: 120px;
+        }
+        p {
+          text-align: center;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+.show-desktop-menu {
+  display: block;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./scss/index.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="headerContainer">
+    <div class="header">
+      <img src="./assets/logo.webp" alt="brand-logo">
+      <div class="navBar">
+        <div class="headerMenu">
+          <a href="#treding">Treding </a>
+          <a href="#pre-orders">Pre-orders</a>
+          <a href="#upcoming">Upcoming</a>
+          <a href="#support24/7">Support24/7</a>
+        </div>
+        <div class="headerbottomMenuContainer" id="headerbottomMenuContainer">
+          <div class="headerbottomMenu">
+            <div class="navIcon" id="pcMenu">
+              <i class="fa-solid fa-desktop"></i>
+              <a>PC</a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="navIcon">
+              <i class="fa-brands fa-playstation"></i>
+              <a href="#playstation">Playstation </a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="navIcon">
+              <i class="fa-brands fa-xbox"></i>
+              <a href="#xbox">Xbox</a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="navIcon">
+              <img src="./assets/nintendo.svg" alt="nintendo">
+              <a href="#nintendo">Nintendo/7</a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="searchIcon" id="searchIcon">
+            <div class="search" id="search">
+              <i class="fas fa-search search-btn"></i>
+            </div>
+          </div>
+          <div class="searchExpand" id="searchExpand">
+            <input type="text" name="search" placeholder="Minecraft, RPG, multiplayer..." class="searchInput"
+              id="searchInput">
+            <a class="advancedSearch">Advanced search</a>
+            <i class="fa-solid fa-times searchcloseButton" id="closeButton"></i>
+          </div>
+        </div>
+
+      </div>
+      <div class="iconContainer">
+        <img class="cartIcon" src="./assets/cartIcon.svg" alt="cartIcon">
+        <i class="fa-regular fa-user accountIcon"></i>
+      </div>
+    </div>
+
+    <div class="desktopMenu" id="desktopMenu">
+      <div class="menuOptionContainer">
+        <div class="menuHead">
+          <h4>Platforms</h4>
+          <p>View all</p>
+        </div>
+        <div class="menuOptions">
+          <div class="option">
+            <i class="fa-brands fa-steam"></i>
+            <p>Steam</p>
+          </div>
+          <div class="option">
+            <img src="./assets/ubisoft.jpg" class="optionImage"></img>
+            <p>Ubisoft Connect</p>
+          </div>
+          <div class="option">
+            <img src="./assets/ea.png" class="optionImage"></img>
+            <p>EA App</p>
+          </div>
+          <div class="option">
+            <img src="./assets/battlenet.png" class="optionImage"></img>
+            <p>Battle.net</p>
+          </div>
+          <div class="option">
+            <img src="./assets/rockstar.png" class="optionImage"></img>
+            <p>Rockstar</p>
+          </div>
+          <div class="option">
+            <img src="./assets/gog.png" class="optionImage"></img>
+            <p>GOG.com</p>
+          </div>
+          <div class="option">
+            <img src="./assets/microsoft.jpg" class="optionImage"></img>
+            <p>Microsoft Store</p>
+          </div>
+          <div class="option">
+            <img src="./assets/epic.png" class="optionImage"></img>
+            <p>Epic</p>
+          </div>
+        </div>
+      </div>
+      <div class="menuOptionContainer">
+        <div class="menuHead">
+          <h4>Platforms</h4>
+          <p>View all</p>
+        </div>
+        <div class="menuOptionsLarge">
+          <div class="optionLarge">
+            <img src="./assets/steam-wide.png" class="optionImage"></img>
+            <p>Steam Gift Cards</p>
+          </div>
+          <div class="optionLarge">
+            <img src="./assets/steam-wide.png" class="optionImage"></img>
+            <p>IG Gift Cards</p>
+          </div>
+          <div class="optionLarge">
+            <img src="./assets/steam-wide.png" class="optionImage"></img>
+            <p>Blizzard Gift Cards</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bannerTextContainer">
+      <h5>In 15 days</h5>
+      <h1>Starfield Digital Premium
+        Editional + Early Access</h1>
+      <div class="bannerPrice">
+        <div class="discountContainer">
+          <p class="discount">
+            -25%
+          </p>
+        </div>
+        <h3>19.99$</h3>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Header -->
+  <div class="overlay" id="overlay"></div>
+  <div class="headerContainerMobile" id="headerContainerMobile">
+    <!-- Hamburger Menu -->
+    <div class="mobileMenu">
+      <div class="navIcon">
+        <i class="fa-solid fa-bars" id="mobileMenuButton"></i>
+        <!-- Logo -->
+        <img src="./assets/logo.webp" alt="brand-logo" class="logo">
+      </div>
+
+      <!-- Cart and Account Icons -->
+      <div class="iconContainer">
+        <img class="cartIcon" src="./assets/cartIcon.svg" alt="cartIcon">
+        <i class="fa-regular fa-user accountIcon"></i>
+        <div></div>
+        <i class="fas fa-search searchIcon"></i>
+      </div>
+      <!-- Search Icon -->
+    </div>
+    <div class="bannerTextContainer">
+      <h5>In 15 days</h5>
+      <h1>Starfield Digital Premium
+        Editional + Early Access</h1>
+      <div class="bannerPrice">
+        <div class="discountContainer">
+          <p class="discount">
+            -25%
+          </p>
+        </div>
+        <h3>19.99$</h3>
+      </div>
+    </div>
+  </div>
+  <!-- Menu -->
+  <div class="mobileMenuConatiner">
+    <div id="mobileMenu" class="mobile-drawer">
+      <div class="closeButton" id="closeDrawer">
+        <i class="fa-solid fa-times"></i>
+      </div>
+
+      <div class="headerMobileMenu">
+        <a class="active" href="#treding">Treding </a>
+        <a href="#pre-orders">Pre-orders</a>
+        <a href="#upcoming">Upcoming</a>
+        <a href="#support24/7">Support24/7</a>
+        <a href="#pc">PC</a>
+        <a href="#playstation">Playstation </a>
+        <a href="#xbox">Xbox</a>
+        <a href="#nintendo">Nintendo/7</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- view all -->
+  <div class="cardContainer">
+    <div class="cardheader">
+      <h2>Trending</h2>
+      <button class="cardButton">View all</button>
+    </div>
+
+    <div class="cardBodyContainer">
+      <div class="cardBody">
+        <div class="cardImageContainer">
+          <div class="cardImage">
+            <img src="./assets/sengoku.webp" alt="cartIcon">
+          </div>
+          <p class="discount">
+            -26%
+          </p>
+        </div>
+        <div class="cardFooter">
+          <h4>sengoku Dynasty</h4>
+          <h3>19.99$</h3>
+        </div>
+      </div>
+      <div class="cardBody">
+        <div class="cardImageContainer">
+          <div class="cardImage">
+            <img src="./assets/remnant.webp" alt="cartIcon">
+          </div>
+          <p class="discount">
+            26%
+          </p>
+        </div>
+        <div class="cardFooter">
+          <h4>sengoku Dynasty</h4>
+          <h3>19.99$</h3>
+        </div>
+      </div>
+      <div class="cardBody">
+        <div class="cardImageContainer">
+          <div class="cardImage">
+            <img src="./assets/simsHorse.webp" alt="cartIcon">
+          </div>
+          <p class="discount">
+            23%
+          </p>
+        </div>
+        <div class="cardFooter">
+          <h4>sengoku Dynasty</h4>
+          <h3>19.99$</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>

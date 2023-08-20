@@ -1,0 +1,130 @@
+.cardContainer {
+  padding: 30px 150px;
+  background-color: #272727;
+  .cardheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  h2 {
+    color: white;
+  }
+  .cardButton {
+    padding: 0px 15px;
+    height: 40px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgb(135 129 129);
+    border-radius: 10px;
+  }
+  .cardBodyContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    .cardBody {
+      width: 33%;
+      overflow: hidden;
+      .cardImageContainer {
+        position: relative;
+        overflow: hidden;
+        padding: 2px;
+        z-index: 2;
+        .cardImage {
+          height: 240px;
+          max-width: 100%;
+          overflow: hidden;
+          border-radius: 10px;
+          img {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            &:hover {
+              cursor: pointer;
+              transform: scale(1.1);
+              transition: all 1.3s ease-in-out;
+            }
+          }
+        }
+
+        .discount {
+          font-weight: 600;
+          font-size: 16px;
+          position: absolute;
+          margin-bottom: 0;
+          bottom: 0;
+          left: 0;
+          line-height: 25px;
+          color: white;
+          background-color: #ff590a;
+          padding: 2px 10px;
+          border-radius: 3px 10px 5px 5px;
+          z-index: 3;
+          &:after {
+            transform: skew(25deg);
+            width: 100%;
+            border-radius: 10px 3px;
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -4px;
+            z-index: -1;
+            background-color: #ff590a;
+          }
+        }
+      }
+      .cardFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h4 {
+          font-size: 16px;
+          color: white;
+        }
+        h3 {
+          font-size: 20px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .cardContainer {
+    padding: 30px;
+    .cardBodyContainer {
+      gap: 15px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .cardContainer {
+    padding: 30px;
+
+    .cardBodyContainer {
+      flex-direction: column;
+      .cardBody {
+        width: 100%;
+        img {
+          height: 100% !important;
+        }
+        img:hover {
+          transform: none !important;
+          transition: none !important;
+        }
+        .cardFooter {
+          margin-bottom: 20px;
+          h3 {
+            margin: 0;
+          }
+          h4 {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}

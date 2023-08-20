@@ -1,0 +1,43 @@
+.headerContainer {
+  background-image: url(../../assets/banner.avif);
+  height: 680px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 50px;
+
+    .iconContainer {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 120px;
+      .accountIcon {
+        background-color: rgb(224, 223, 223);
+        color: blue;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .cartIcon {
+        width: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.headerContainerMobile {
+  display: none;
+}
+.mobile-drawer {
+  visibility: hidden;
+}
+
+.mobileMenuConatiner{
+  background-color: #272727;
+}

@@ -1,0 +1,103 @@
+@media (max-width: 768px) {
+  .headerContainer {
+    display: none;
+  }
+  .headerContainerMobile {
+    display: block;
+    background-image: url(../../assets/banner.avif);
+    height: 400px;
+    padding: 10px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .mobileMenu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    i {
+      color: white;
+    }
+    .navIcon {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .fa-bars {
+        font-size: 30px;
+      }
+      .logo {
+        width: 90px;
+      }
+    }
+
+    .iconContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      .accountIcon {
+        background-color: rgb(224 223 223 / 63%);
+        color: blue;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .cartIcon {
+        width: 25px;
+        cursor: pointer;
+      }
+      .searchIcon {
+        background: linear-gradient(to bottom, #ff4a1b, #ff7206);
+        padding: 12px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+
+    .searchIcon {
+      margin: 10px 0;
+    }
+  }
+  .open-menu {
+    display: block !important;
+    left: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+  .mobile-drawer {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -10%;
+    opacity: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    color: #fff;
+    padding: 30px 0;
+    z-index: 5;
+    transition: all 0.3s ease-in-out;
+    .closeButton {
+      margin-bottom: 30px;
+      padding-right: 20px;
+      i {
+        float: right;
+        color: black !important;
+        font-size: 30px;
+      }
+    }
+    .headerMobileMenu {
+      display: flex;
+      flex-direction: column;
+      a {
+        text-decoration: none;
+        color: black;
+        padding: 12px 20px;
+        font-weight: bold;
+        border-bottom: 1px solid rgb(238, 236, 236);
+      }
+    }
+  }
+}

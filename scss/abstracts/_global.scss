@@ -1,0 +1,31 @@
+@import "./colors";
+
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  color: $text;
+}
+p,
+h4 {
+  margin: 0;
+  font-size: 12px;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 4; /* Below the menu but above other content */
+  transition: opacity 0.3s ease-in-out;
+}
